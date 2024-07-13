@@ -1,9 +1,1 @@
-<script>
-</script>
-
-<main>
-    <h1>Navbar</h1>
-</main>
-
-<style>
-</style>
+<p>Hey there, this is the navbar</p>
