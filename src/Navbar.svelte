@@ -2,7 +2,7 @@
 </script>
 
 <main>
-    <Navbar />
+    <h1>Navbar</h1>
 </main>
 
 <style>
