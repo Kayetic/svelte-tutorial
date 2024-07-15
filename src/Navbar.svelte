@@ -1,31 +1,40 @@
-<main>
-    <h3>About</h3>
-    <h3>Projects</h3>
-    <h3>Contact</h3>
-    <h3>Blog</h3>
-    <h3>Portfolio</h3>
-</main>
+<script>
+    export let navItems = [
+        { text: 'About', href: '/about' },
+        { text: 'Projects', href: '/projects' },
+        { text: 'Contact', href: '/contact' },
+        { text: 'Blog', href: '/blog' },
+        { text: 'Portfolio', href: '/portfolio' }
+    ];
+</script>
+
+<nav>
+    {#each navItems as item}
+        <a href={item.href}>{item.text}</a>
+    {/each}
+</nav>
 
 <style>
-    h3 {
-        font-family: "SF Mono", monospace;
-        position: relative;
-        cursor: pointer;
-
-        transition: letter-spacing 0.25s ease-out;
-    }
-
-    main {
+    nav {
         display: flex;
         justify-content: space-between;
         padding: 0 2rem;
     }
 
-    h3:hover {
+    a {
+        font-family: "SF Mono", monospace;
+        position: relative;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        transition: letter-spacing 0.25s ease-out;
+    }
+
+    a:hover {
         letter-spacing: 1px;
     }
 
-    h3::after {
+    a::after {
         content: '';
         position: absolute;
         width: 0;
@@ -36,7 +45,7 @@
         transition: width 0.25s ease-out;
     }
 
-    h3:hover::after {
+    a:hover::after {
         width: 100%;
     }
 
