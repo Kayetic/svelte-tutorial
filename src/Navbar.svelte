@@ -1,10 +1,10 @@
 <script>
     export let navItems = [
-        { text: 'About', href: '/about' },
-        { text: 'Projects', href: '/projects' },
-        { text: 'Contact', href: '/contact' },
-        { text: 'Blog', href: '/blog' },
-        { text: 'Portfolio', href: '/portfolio' }
+        { text: "About", href: "/about" },
+        { text: "Projects", href: "/projects" },
+        { text: "Contact", href: "/contact" },
+        { text: "Blog", href: "/blog" },
+        { text: "Portfolio", href: "/portfolio" },
     ];
 </script>
 
@@ -19,6 +19,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0 2rem;
+        margin: 1.5rem 0;
     }
 
     a {
@@ -35,7 +36,7 @@
     }
 
     a::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 0;
         height: 2px;
@@ -50,7 +51,8 @@
     }
 
     @keyframes underline-hover {
-        0%, 100% {
+        0%,
+        100% {
             width: 0;
         }
         50% {
